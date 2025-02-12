@@ -377,7 +377,7 @@ Employee Boarding Activity,Działalność Boarding pracownika,
 Activity Name,Nazwa działania,
 Required for Employee Creation,Wymagany w przypadku tworzenia pracowników,
 Applicable in the case of Employee Onboarding,Ma zastosowanie w przypadku wprowadzenia pracownika na rynek,
-Employee Checkin,Checkin pracownika,
+Employee Checkin,Lista obecności pracownika,
 Log Type,Typ dziennika,
 OUT,WYJŚCIE,
 Location / Device ID,Lokalizacja / identyfikator urządzenia,
@@ -853,7 +853,13 @@ Shift Schedule Assignment,Przydział Grafików Zmian,
 Shift Attendance,Zmianowy Raport Obecności,
 Project Profitability,Opłacalność Projektów,
 Dates & Reason,Daty i Powód,
-Every Week, Co tydzień
-Every 2 Weeks, Co 2 tydzień
-Every 3 Weeks, Co 3 tydzień
-Every 4 Weeks, Co 4 tydzień
+Every Week, Co tydzień,
+Every 2 Weeks, Co 2 tydzień,
+Every 3 Weeks, Co 3 tydzień,
+Every 4 Weeks, Co 4 tydzień,
+{0} Missing,Brakuje: {0}
+Please set {0} and {1} in {2}.,Ustaw {0} i {1} w {2}.,
+Please set {0} for Employee {1},Ustaw {0} dla pracownika {1},
+Please set {0} for the Employee: {1},Ustaw {0} dla pracownika: {1},
+Please set {0}.,Ustaw {0}.,
+or for the Employee's Department: {0},lub dla działu pracownika: {0},
