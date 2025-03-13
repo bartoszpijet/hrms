@@ -59,18 +59,19 @@ def create_shift_schedule_assignment(
 	frequency: str,
 	shift_location: str | None = None,
 ) -> None:
-	shift_schedule = get_or_insert_shift_schedule(shift_type, frequency, repeat_on_days)
-	shift_schedule_assignment = frappe.get_doc(
-		{
-			"doctype": "Shift Schedule Assignment",
-			"shift_schedule": shift_schedule,
-			"employee": employee,
-			"company": company,
-			"shift_status": status,
-			"shift_location": shift_location,
-			"enabled": 0 if end_date else 1,
-		}
-	).insert()
+	return
+	#shift_schedule = get_or_insert_shift_schedule(shift_type, frequency, repeat_on_days)
+	#shift_schedule_assignment = frappe.get_doc(
+	#	{
+	#		"doctype": "Shift Schedule Assignment",
+	#		"shift_schedule": shift_schedule,
+	#		"employee": employee,
+	#		"company": company,
+	#		"shift_status": status,
+	#		"shift_location": shift_location,
+	#		"enabled": 0 if end_date else 1,
+	#	}
+	#).insert()
 
 	#if not end_date or date_diff(end_date, start_date) <= 90:
 	#	return shift_schedule_assignment.create_shifts(start_date, end_date)
