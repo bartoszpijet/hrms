@@ -67,12 +67,12 @@ class ShiftScheduleAssignment(Document):
 		self.save()
 
 
-def process_auto_shift_creation():
-	shift_schedule_assignments = frappe.get_all(
-		"Shift Schedule Assignment",
-		filters={"enabled": 1, "create_shifts_after": ["<=", nowdate()]},
-		pluck="name",
-	)
-	for d in shift_schedule_assignments:
-		doc = frappe.get_doc("Shift Schedule Assignment", d)
-		doc.create_shifts(add_days(doc.create_shifts_after, 1))
+#def process_auto_shift_creation():
+#	shift_schedule_assignments = frappe.get_all(
+#		"Shift Schedule Assignment",
+#		filters={"enabled": 1, "create_shifts_after": ["<=", nowdate()]},
+#		pluck="name",
+#	)
+#	for d in shift_schedule_assignments:
+#		doc = frappe.get_doc("Shift Schedule Assignment", d)
+#		doc.create_shifts(add_days(doc.create_shifts_after, 1))
