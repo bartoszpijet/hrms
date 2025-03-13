@@ -223,8 +223,8 @@ class ShiftAssignmentTool(Document):
 						self.shift_location,
 					)
 				)
-				if self.action == "Assign Shift Schedule":
-					assignment.create_shifts(self.start_date, self.end_date)
+				#if self.action == "Assign Shift Schedule":
+				#	assignment.create_shifts(self.start_date, self.end_date)
 
 			except Exception:
 				frappe.db.rollback(save_point=savepoint)

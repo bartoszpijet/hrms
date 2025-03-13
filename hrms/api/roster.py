@@ -72,12 +72,12 @@ def create_shift_schedule_assignment(
 		}
 	).insert()
 
-	if not end_date or date_diff(end_date, start_date) <= 90:
-		return shift_schedule_assignment.create_shifts(start_date, end_date)
+	#if not end_date or date_diff(end_date, start_date) <= 90:
+	#	return shift_schedule_assignment.create_shifts(start_date, end_date)
 
-	frappe.enqueue(
-		shift_schedule_assignment.create_shifts, timeout=4500, start_date=start_date, end_date=end_date
-	)
+	#frappe.enqueue(
+	#	shift_schedule_assignment.create_shifts, timeout=4500, start_date=start_date, end_date=end_date
+	#)
 
 
 @frappe.whitelist()
